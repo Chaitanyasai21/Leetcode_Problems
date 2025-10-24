@@ -4,7 +4,7 @@ class Solution {
         int l = 0;
         int max = 0;
         for(int r = 0; r < s.length(); r++){
-            while(hs.contains(s.charAt(r))){
+            while(!hs.isEmpty() && hs.contains(s.charAt(r))){
                 hs.remove(s.charAt(l));
                 l++;
             }
