@@ -1,16 +1,13 @@
-import java.util.*;
 class Solution {
     public void reverseString(char[] s) {
-        // char arr[] = new char[s.length];
-        int l = 0;
+        int l =  0;
         int r = s.length - 1;
-        while(l <= r){
+        while(l < r){
             char temp = s[l];
             s[l] = s[r];
             s[r] = temp;
             l++;
             r--;
         }
-        // System.out.println(Arrays.toString(s));
     }
 }
