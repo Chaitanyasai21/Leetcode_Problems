@@ -4,7 +4,7 @@ class Solution {
         if(dividend == Integer.MIN_VALUE && divisor == -1){
             return Integer.MAX_VALUE;
         }
-        int res = dividend / divisor;
-        return (int) Math.floor(res);
+        return dividend / divisor;
+        // return (int) Math.floor(res);
     }
 }
